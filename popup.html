@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Extension Popup</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+      overflow: hidden; /* Hide overflow to prevent scrollbars */
+    }
+    #message {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+    #learnmore {
+      font-size: 10px;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+    #countdown {
+      font-size: 20px;
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    #logo {
+      width: 128px;
+      transform: translate(-50%, -50%); /* Center the logo */
+      pointer-events: none; /* Ensure the logo doesn't interfere with cursor events */
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="images/icon128.png" alt="Extension Logo" id="logo">
+  </div>
+  <p id="message">You're good to go!</p>
+  <div id="countdown">10</div>
+  <p id="learnmore">Or just do another quiz</p>
+  <a href="https://goshintai.xyz/projects/grindmaster/" class="button" target="_blank">More Quiz</a>
+  <script src="popup.js"></script>
+</body>
+</html>

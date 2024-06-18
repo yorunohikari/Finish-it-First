@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Finish it First!</title>
+  <style>
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    #quiz-container {
+        max-width: 500px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px; /* Larger font size for heading */
+    }
+    /* Quiz question styling */
+    .question {
+      margin-bottom: 20px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .question p {
+      margin: 0;
+      font-size: 18px; /* Larger font size for question text */
+    }
+    .options {
+      list-style-type: none;
+      padding: 0;
+    }
+    .options li {
+      margin-bottom: 10px;
+    }
+    .options label {
+      cursor: pointer;
+      display: block;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      font-size: 16px; /* Larger font size for option labels */
+    }
+    .options label:hover {
+      background-color: #e0e0e0;
+    }
+    /* Selected option style */
+    .options label input:checked {
+      background-color: #007bff; /* Blueish background color */
+      color: white;
+    }
+    /* Submit button styling */
+    #submit-quiz {
+      display: block;
+      margin: 20px auto;
+      padding: 12px 24px; /* Larger padding for button */
+      font-size: 18px; /* Larger font size for button text */
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #submit-quiz:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    /* Results and message styling */
+    .results {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 20px; /* Larger font size for results */
+    }
+    .message {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 20px; /* Larger font size for message */
+    }
+    /* Underscore styling */
+    .underscore {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Just Finish it First, dude!</h1>
+  <div id="quiz-container"></div>
+  <button id="submit-quiz" disabled>Submit Quiz</button>
+  <div class="results" id="results"></div>
+  <div class="message" id="message"></div>
+  <script src="quiz.js"></script>
+</body>
+</html>
