@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 window.location.href = originalUrl;
             } else {
                 // Close the tab if no original URL is found
-                window.location.href = "https://www.youtube.com/watch?v=CGHlZglJKuE";
+                window.location.href = "https://duckduckgo.com/";
             }
         }, 2000); // Close the tab after 2 seconds
     }
