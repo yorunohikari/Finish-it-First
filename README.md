@@ -1,14 +1,13 @@
 # Finish it First
 
-Finish it First is a Chrome extension that helps users stay focused and productive by restricting web browsing until they complete a daily quiz. The extension blocks access to websites until the user successfully answers a set of randomly generated questions. Once the quiz is passed, the user can freely browse the web until the next day's quiz.
+Finish it First is a Chrome extension that helps users stay focused and productive by restricting web browsing until they complete a daily quiz. The extension blocks access to websites until the user successfully answers a set of randomly selected questions. Once the quiz is passed, the user can freely browse the web until the next day's quiz.
 
 ## Features
 
-- Daily quiz with randomly generated questions
+- Daily quiz with randomly selected questions
 - Blocks access to websites until the quiz is completed
 - Countdown timer for the next quiz
 - Stores quiz scores and completion dates
-- Customizable quiz settings (e.g., question count, difficulty)
 
 ## Installation
 
