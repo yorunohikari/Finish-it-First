@@ -102,13 +102,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function closeQuizTab() {
         setTimeout(() => {
-            if (originalUrl) {
-                // Redirect back to the original URL
-                window.location.href = originalUrl;
-            } else {
-                // Close the tab if no original URL is found
-                window.location.href = "https://duckduckgo.com/";
-            }
+            chrome.tabs.getCurrent(function(tab) {
+                chrome.tabs.remove(tab.id);
+            });
         }, 2000); // Close the tab after 2 seconds
     }
 });
